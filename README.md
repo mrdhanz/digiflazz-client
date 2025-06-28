@@ -1,6 +1,6 @@
 # digiflazz-node
 
-![NPM Version](https://img.shields.io/npm/v/digiflazz-client)![License](https://img.shields.io/npm/l/digiflazz-client)![Downloads](https://img.shields.io/npm/dm/digiflazz-client)![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-blue)
+![NPM Version](https://img.shields.io/npm/v/digiflazz-node)![License](https://img.shields.io/npm/l/digiflazz-node)![Downloads](https://img.shields.io/npm/dm/digiflazz-node)![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-blue)
 
 SDK Klien NodeJS tidak resmi (*unofficial*) yang modern, ringan, dan *type-safe* untuk berinteraksi dengan [API Buyer Digiflazz](https://developer.digiflazz.com/api/buyer).
 
