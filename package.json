@@ -1,0 +1,38 @@
+{
+  "name": "digiflazz-client",
+  "version": "1.0.0",
+  "description": "SDK Klien tidak resmi untuk Digiflazz API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdhanz/digiflazz-client-node.git"
+  },
+  "keywords": [
+    "digiflazz",
+    "api",
+    "sdk",
+    "client",
+    "ppob",
+    "pulsa",
+    "voucher",
+    "topup"
+  ],
+  "author": "Dandi Gilang Ramadhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrdhanz/digiflazz-client-node/issues"
+  },
+  "homepage": "https://github.com/mrdhanz/digiflazz-client-node#readme",
+  "dependencies": {
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "typescript": "^5.8.3"
+  }
+}
