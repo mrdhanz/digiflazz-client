@@ -1,5 +1,5 @@
 {
-  "name": "digiflazz-client",
+  "name": "digiflazz-node",
   "version": "1.0.0",
   "description": "SDK Klien tidak resmi untuk Digiflazz API",
   "main": "dist/index.js",
