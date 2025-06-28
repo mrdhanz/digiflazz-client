@@ -1,5 +1,5 @@
 {
-  "name": "digiflazz-node",
+  "name": "digiflazz-client",
   "version": "1.0.0",
   "description": "SDK Klien tidak resmi untuk Digiflazz API",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrdhanz/digiflazz-node.git"
+    "url": "git+https://github.com/mrdhanz/digiflazz-client.git"
   },
   "keywords": [
     "digiflazz",
@@ -25,9 +25,9 @@
   "author": "Dandi Gilang Ramadhan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrdhanz/digiflazz-node/issues"
+    "url": "https://github.com/mrdhanz/digiflazz-client/issues"
   },
-  "homepage": "https://github.com/mrdhanz/digiflazz-node#readme",
+  "homepage": "https://github.com/mrdhanz/digiflazz-client#readme",
   "dependencies": {
     "axios": "^1.10.0"
   },

@@ -1,6 +1,6 @@
-# digiflazz-node
+# digiflazz-client
 
-![NPM Version](https://img.shields.io/npm/v/digiflazz-node)![License](https://img.shields.io/npm/l/digiflazz-node)![Downloads](https://img.shields.io/npm/dm/digiflazz-node)![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-blue)
+![NPM Version](https://img.shields.io/npm/v/digiflazz-client)![License](https://img.shields.io/npm/l/digiflazz-client)![Downloads](https://img.shields.io/npm/dm/digiflazz-client)![Built with TypeScript](https://img.shields.io/badge/built%20with-TypeScript-blue)
 
 SDK Klien NodeJS tidak resmi (*unofficial*) yang modern, ringan, dan *type-safe* untuk berinteraksi dengan [API Buyer Digiflazz](https://developer.digiflazz.com/api/buyer).
 
@@ -42,13 +42,13 @@ Gunakan manajer paket favorit Anda untuk menginstal.
 
 ```bash
 # Menggunakan npm
-npm install digiflazz-node
+npm install digiflazz-client
 
 # Menggunakan yarn
-yarn add digiflazz-node
+yarn add digiflazz-client
 
 # Menggunakan pnpm
-pnpm add digiflazz-node
+pnpm add digiflazz-client
 ```
 
 ## Penggunaan Dasar
@@ -56,7 +56,7 @@ pnpm add digiflazz-node
 Impor `DigiflazzClient` dan inisialisasi dengan `username` dan `production key` Anda.
 
 ```typescript
-import { DigiflazzClient, DigiflazzApiError } from 'digiflazz-node';
+import { DigiflazzClient, DigiflazzApiError } from 'digiflazz-client';
 import { randomUUID } from 'crypto'; // Diperlukan untuk membuat ref_id unik
 
 // Ganti dengan kredensial Anda dari dashboard Digiflazz
@@ -269,7 +269,7 @@ Properti `DigiflazzApiError`:
 - `responseData`: Objek respons lengkap dari API.
 
 ```typescript
-import { DigiflazzClient, DigiflazzApiError, ResponseCode } from 'digiflazz-node';
+import { DigiflazzClient, DigiflazzApiError, ResponseCode } from 'digiflazz-client';
 
 const client = new DigiflazzClient('user', 'key');
 
@@ -304,7 +304,7 @@ import {
   ResponseCode,
   HargaProduk,
   TransaksiResponse
-} from 'digiflazz-node';
+} from 'digiflazz-client';
 
 function cetakInfoProduk(produk: HargaProduk) {
   // ...
@@ -331,7 +331,7 @@ Gunakan fungsi `verifyAndParseWebhook` untuk memastikan *request* yang masuk ben
 
 ```typescript
 import express from 'express';
-import { verifyAndParseWebhook, DigiflazzWebhookError, WebhookEvent } from 'digiflazz-node';
+import { verifyAndParseWebhook, DigiflazzWebhookError, WebhookEvent } from 'digiflazz-client';
 
 const app = express();
 
@@ -393,7 +393,7 @@ Anda dapat secara manual memicu *ping event* untuk menguji konektivitas webhook 
 - **Returns**: `Promise<PingEventPayload>`
 
 ```typescript
-import { DigiflazzClient } from 'digiflazz-node';
+import { DigiflazzClient } from 'digiflazz-client';
 
 const client = new DigiflazzClient('USERNAME_ANDA', 'API_KEY_ANDA');
 const WEBHOOK_ID = 'ID_WEBHOOK_ANDA'; // Dapat dilihat di dashboard
